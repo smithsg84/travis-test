@@ -9,8 +9,8 @@ compiler:
 
 before_install:
   - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-  - sudo apt-get –q update
-  - sudo apt-get –y install gcc-6 g++-6 cmake
+  - sudo apt-get -q update
+  - sudo apt-get -y install gcc-6 g++-6 cmake
 
 script:
   - mkdir -p build && cd build && cmake .. && make && make test
