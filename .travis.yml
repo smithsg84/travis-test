@@ -14,3 +14,4 @@ before_install:
 
 script:
   - mkdir -p build && cd build && cmake .. && make && make test
+
